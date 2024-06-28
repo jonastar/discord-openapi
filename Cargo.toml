@@ -1,0 +1,3 @@
+[workspace]
+members = ["generator", "generated-rust"]
+resolver = "2"
