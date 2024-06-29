@@ -10,8 +10,10 @@ mod spec;
 
 const SPEC_STR: &str = include_str!("spec.json");
 
-const HEADER: &'static str = "use std::collections::HashMap;
-use serde::{Serialize, Deserialize};
+const HEADER: &'static str = "use serde::{Deserialize, Deserializer, Serialize};
+use std::collections::HashMap;
+
+use crate::{IntTagVisitor, StringTagVisitor};
 ";
 
 fn main() {
